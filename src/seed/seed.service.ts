@@ -11,6 +11,7 @@ export class SeedService {
   }
   private async insertNewProducts() {
     await this.productService.deleteAllProducts();
+
     const products = initialData.products;
     const insertPromise = [];
     products.forEach((product) => {
