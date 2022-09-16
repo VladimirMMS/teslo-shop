@@ -15,7 +15,9 @@ import { fileFilter } from './helpers/fileFilter';
 import { fileNamer } from './helpers/fileNamer';
 import { Response } from 'express';
 import { ConfigService } from '@nestjs/config';
+import { ApiTags } from '@nestjs/swagger';
 
+@ApiTags('Files')
 @Controller('files')
 export class FilesController {
   constructor(
